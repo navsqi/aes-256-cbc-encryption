@@ -1,6 +1,6 @@
 {
   "name": "aes-256-cbc-encryption",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "This Node.js module provides robust and secure functions for encrypting and decrypting text using the AES-256-CBC (Advanced Encryption Standard with 256-bit key size in Cipher Block Chaining mode) algorithm.",
   "repository": {
     "type": "git",

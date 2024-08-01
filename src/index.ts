@@ -33,7 +33,11 @@ function generateInitVector(str: string): string {
  * @param initVector 16-byte initialization vector (IV).
  * @returns {string} encrypted text
  */
-function encrypt(text: string, key?: string, initVector?: string): string {
+export function encrypt(
+  text: string,
+  key?: string,
+  initVector?: string
+): string {
   const { aesKey, aesIV } = getKey(key, initVector);
 
   const cipher = crypto.createCipheriv(
@@ -55,7 +59,11 @@ function encrypt(text: string, key?: string, initVector?: string): string {
  * @param initVector 16-byte initialization vector (IV).
  * @returns {string} decrypted text
  */
-function decrypt(encrypted: string, key?: string, initVector?: string): string {
+export function decrypt(
+  encrypted: string,
+  key?: string,
+  initVector?: string
+): string {
   const { aesKey, aesIV } = getKey(key, initVector);
 
   let decipher = crypto.createDecipheriv(

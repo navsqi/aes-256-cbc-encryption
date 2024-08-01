@@ -12,7 +12,9 @@
     "build": "tsc",
     "test": "jest",
     "dev": "AES_KEY=bf3c199c2470cb477d907b1e0917c17b AES_IV=5183666c72eec9e4 node dist/index.js",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "release": "standard-version",
+    "publish": "rm -rf dist/ && tsc && npm publish"
   },
   "keywords": [
     "aes",
@@ -29,6 +31,7 @@
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "jest": "^29.7.0",
+    "standard-version": "^9.5.0",
     "ts-jest": "^29.2.3"
   }
 }
